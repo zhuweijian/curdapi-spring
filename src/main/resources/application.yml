@@ -1,0 +1,8 @@
+mysql:
+  user: root
+  password: 123456
+  dbName: apijson_db
+  host: 127.0.0.1
+  dataSource: com.mysql.cj.jdbc.MysqlDataSource
+
+
