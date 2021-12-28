@@ -1,7 +1,16 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8080
+  connection-timeout: 5000ms
+  servlet:
+    context-path: /ruantang
 mysql:
   user: root
   password: 123456
-  dbName: apijson_db
+  dbName: ruantang
   host: 127.0.0.1
   dataSource: com.mysql.cj.jdbc.MysqlDataSource
 

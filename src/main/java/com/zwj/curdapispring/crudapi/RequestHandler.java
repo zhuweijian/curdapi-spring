@@ -100,7 +100,7 @@ public class RequestHandler {
         this.req = req;
         this.config = apiConfig;
         this.databaseName = link.getCatalog();
-        final String pathInfo = req.getRequestURI().substring(9); // 去掉 /curd_api 前缀
+        final String pathInfo = req.getRequestURI().substring("/ruantang/crud_api".length()); // 去掉 /curd_api 前缀
         String[] request = pathInfo == null ? new String[]{""} : pathInfo.replaceAll("/$|^/", "").split("/");
         JsonParser jsonParser = new JsonParser();
         this.root = null;
